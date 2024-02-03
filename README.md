@@ -1,3 +1,3 @@
 # ElasticTextVisualize
-![gif](https://imgur.com/a/t7uZs51)
+![Imgur](https://imgur.com/BHdyrNb)
 On Unity, display a text from Elasticsearch
