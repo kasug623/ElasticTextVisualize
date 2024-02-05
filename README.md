@@ -4,6 +4,10 @@
 
 On Unity, display a text from Elasticsearch
 
+## System Requirements
+- Unity 2022.3.12f1
+- URP 14.0.9
+
 ## Preparation
 - `Unitask`  
     - add Package from `UPM`  
@@ -21,12 +25,12 @@ https://github.com/kasug623/PollingElasticsearch.git?path=Packages/PollingElasti
         ```json
         ...
         "scopedRegistries": [
-        {
-        "name": "Unity NuGet",
-        "url": "https://unitynuget-registry.azurewebsites.net",
-        "scopes": [
-            "org.nuget"
-            ]
+            {
+            "name": "Unity NuGet",
+            "url": "https://unitynuget-registry.azurewebsites.net",
+            "scopes": [
+                "org.nuget"
+                ]
             }
         ]
         ```
@@ -38,6 +42,7 @@ https://github.com/kasug623/PollingElasticsearch.git?path=Packages/PollingElasti
 1. build `Elasticsearch`  
 IP: XXX.XXX.XXX.XXX  
 2. ingest sample data  
+    
 
 # Ref  
 - https://www.newtonsoft.com/json  
