@@ -6,28 +6,28 @@
     ```json
     GET my-test-index/_search
     {
-    "query": {
-        "range": {
-            "@timestamp": {
-                "gte": "2024-02-01T00:00",
-                "lte": "2024-02-01T23:59"
+        "query": {
+            "range": {
+                "@timestamp": {
+                    "gte": "2024-02-01T00:00",
+                    "lte": "2024-02-01T23:59"
+                }
             }
         }
-    }
     }
     ```
 - queryDSL 2
     ```json
     GET my-test-index/_search
     {
-    "query": {
-        "range": {
-            "@timestamp": {
-                "gte": "2024-02-02T00:00",
-                "lte": "2024-02-02T23:59"
+        "query": {
+            "range": {
+                "@timestamp": {
+                    "gte": "2024-02-02T00:00",
+                    "lte": "2024-02-02T23:59"
+                }
             }
         }
-    }
     }
     ```
 On Unity, display a text from Elasticsearch
@@ -72,9 +72,25 @@ https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
 
 # Procedures  
 1. build `Elasticsearch`  
-    IP: XXX.XXX.XXX.XXX  
+    - e.g.  
+        - IP: XXX.XXX.XXX.XXX  
+        - Port: 9200  
+        - username: elastic  
+        - password: changeme  
+        - index: my-test-index  
 2. ingest sample data  
-    
+    ```console
+    $ python3 upload_csv.py --host XXX.XXX.XXX.XXX --port 9200 --username elastic --password changeme sample.csv my-test-index
+    ```
+    - sample.csv
+        ```csv
+        @timestamp,message,user,wegiht,mood
+        2024-02-01T00:00:00.000Z,Hello World!,kasug623,1,hot
+        2024-02-02T00:00:00.000Z,Yeah!,kasug623,2,cool
+        2024-02-02T00:01:00.000Z,Yeah! Yeah!,kasug623,3,cool
+        2024-02-02T00:02:00.000Z,Yeah! Yeah! Yeah!,kasug623,4,cool
+        ```
+3. play in Unity
 
 # Ref  
 - https://www.newtonsoft.com/json  
