@@ -37,7 +37,7 @@ On Unity, display a text from Elasticsearch
 - URP 14.0.9
 
 ## Preparation
-- `Unitask`  
+- `UniTask`  
     - add Package from `UPM`  
 Package Manager > Add packager from git URL ...  
 https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
