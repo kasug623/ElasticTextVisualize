@@ -40,16 +40,16 @@ On Unity, display a text from Elasticsearch
 - `UniTask`  
     - add Package from `UPM`  
 Package Manager > Add packager from git URL ...  
-https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask  
 
 - `PolliingElasticsearch`  
     - add Package from `UPM`  
         Package Manager > Add packager from git URL ...  
         https://github.com/kasug623/PollingElasticsearch.git?path=Packages/PollingElasticsearch  
-        ![png](https://imgur.com/YUnPUdB.png)
-    - allow http
-        Project Settings > Player > Allow donwload over HTTP*
-        ![png](https://imgur.com/uuRiSqA.png)
+        ![png](https://imgur.com/YUnPUdB.png)  
+    - allow http  
+        Project Settings > Player > Allow donwload over HTTP*  
+        ![png](https://imgur.com/uuRiSqA.png)  
 
 - `Json.NET (NuGet)`  
     1. preapare for `NuGet`  
@@ -68,7 +68,7 @@ https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
         ```
     2. reboot `Unity Editor`  
     3. add Package from `UPM`  
-        Package Manager > Packages: My Registries > search "json"
+        Package Manager > Packages: My Registries > search "json"  
 
 # Procedures  
 1. build `Elasticsearch`  
